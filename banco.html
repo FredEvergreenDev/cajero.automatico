@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Mundial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #d9534f;
+            border-color: #d43f3a;
+        }
+        .btn-primary:hover {
+            background-color: #c9302c;
+            border-color: #ac2925;
+        }
+        .btn-danger {
+            background-color: #b52b27;
+            border-color: #a52824;
+        }
+        .btn-success {
+            background-color: #5cb85c;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <img src="banco_mundial.png" alt="Banco Mundial" class="logo">
+        <h1 class="mb-5">Bienvenido a tu cajero</h1>
+        <div class="d-flex justify-content-center">
+            <button id="consultar" class="btn btn-primary mx-2">Consultar Saldo</button>
+            <button id="ingresar" class="btn btn-success mx-2">Ingresar Monto</button>
+            <button id="retirar" class="btn btn-danger mx-2">Retirar Monto</button>
+            <button id="cerrar" class="btn btn-warning mx-2">Cerrar Sesión</button>
+        </div>
+        <div id="resultado" class="mt-4 text-center"></div>
+        <div id="historial" class="mt-4 text-center"></div>
+    </div>
+    <script src="atm.js"></script>
+</body>
+</html>
+
+
